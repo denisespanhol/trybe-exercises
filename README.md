@@ -1,1 +1,5 @@
-This folder contains all the exercises I do in my time studying at Trybe
+O que eu vou aprender na Trybe:
+
+- Unix
+- Bash
+- Git
