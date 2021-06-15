@@ -1,6 +1,6 @@
 1 - [x] Crie uma pasta com o nome trybe-exercises.
 
-2 - [x] Dentro dessa paste, crie uma oura com o nome exercises e uma última com o nome 2.1 .
+2 - [x] Dentro dessa pasta, crie uma oura com o nome exercises e uma última com o nome 2.1 .
 
 3 - [x] Crie um arquivo .txt com três skills que aprenderá na Trybe.
 
