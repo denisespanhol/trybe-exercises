@@ -1,11 +1,11 @@
-1 - [x] Crie uma pasta com o nome trybe-exercises.
+- [x] 1. Crie uma pasta com o nome trybe-exercises.
 
-2 - [x] Dentro dessa pasta, crie uma outra com o nome exercises e uma última com o nome 2.1 .
+- [x] 2. Dentro dessa pasta, crie uma outra com o nome exercises e uma última com o nome 2.1 .
 
-3 - [x] Crie um arquivo .txt com três skills que aprenderá na Trybe.
+- [x] 3. Crie um arquivo .txt com três skills que aprenderá na Trybe.
 
-4 - [x] Finalize com as instruções e comandos contidos na Parte 5.
+- [x] 4. Finalize com as instruções e comandos contidos na Parte 5.
 
-5 - [x] Realize todas as atividades da parte 2.2 (criação de branchs e realização da merge; solução dos conflitos).
+- [x] 5. Realize todas as atividades da parte 2.2 (criação de branchs e realização da merge; solução dos conflitos).
 
-6 - [x] Termine realizando o pull no repositório local.
+- [x] 6. Termine realizando o pull no repositório local.
