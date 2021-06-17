@@ -1,0 +1,31 @@
+#font-size {
+    font-size: 65px;
+    color: orange;
+}
+.background-color {
+    background-color: violet;
+}
+h1 {
+    font-family: sans-serif;
+}
+#first-paragraph {
+    font-weight: 600;
+    font-size: 3em;
+    text-decoration: rgb(20, 197, 197);
+}
+body {
+    font-size: 16px;
+}
+#first-list {
+    font-style: italic;
+    line-height: 7.5mm;
+}
+#item1 {
+    background-color: yellow;
+}
+#item2 {
+    background-color: red;
+}
+#item3 {
+    background-color: brown;
+}
