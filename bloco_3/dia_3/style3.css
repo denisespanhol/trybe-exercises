@@ -1,0 +1,11 @@
+.centralize {
+    text-align: center;
+}
+
+li:hover {
+    background-color: blueviolet;
+}
+
+ol, ul {
+    list-style: none;
+}
