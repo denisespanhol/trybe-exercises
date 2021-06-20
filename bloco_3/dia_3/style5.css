@@ -1,0 +1,64 @@
+.yellow {
+    background-color: yellow;
+}
+
+.yellow:nth-of-type(even) {
+    background-color: green;
+}
+
+.yellow:nth-of-type(odd) {
+    text-transform:uppercase;
+}
+
+.blue {
+    background-color: rgb(11, 170, 243);
+}
+
+.color-red {
+    color: red;
+}
+
+h1:nth-of-type(1) {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+.li-size {
+    font-size: 20px;
+}
+
+.li-bold {
+    font-weight: bold;
+}
+
+.blue-font-color {
+    color: blue;
+}
+
+.pink-background {
+    background-color: pink;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.overflow-color:hover {
+    color: orange;
+}
+
+.w3schools-color:hover {
+    color: green;
+}
+
+.mdn-color:hover {
+    color: black;
+}
+
+.devdocs-color:hover {
+    color: rgb(222, 240, 60);
+}
+
+.trybe-color:hover {
+    color: yellowgreen;
+}
