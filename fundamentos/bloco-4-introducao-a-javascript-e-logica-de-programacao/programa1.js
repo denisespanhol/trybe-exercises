@@ -1,5 +1,6 @@
-let number1 = 95;
-let number2 = 485;
-let result = number1 + number2;
+let a = 10;
+let b = 89;
+
+let result = a + b;
 
 console.log(result);
