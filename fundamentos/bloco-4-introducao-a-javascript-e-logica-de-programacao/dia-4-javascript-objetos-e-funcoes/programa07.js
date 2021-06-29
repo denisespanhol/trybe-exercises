@@ -11,4 +11,6 @@ function toCompareValor(indexValue, array) {
   return indexValue
 }
 
-console.log(toCompareValor(0, numbers));
+let result = toCompareValor(0, numbers);
+
+console.log(result);
