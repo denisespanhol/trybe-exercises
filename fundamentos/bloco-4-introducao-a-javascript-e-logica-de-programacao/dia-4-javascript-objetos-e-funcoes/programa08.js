@@ -1,16 +1,18 @@
 // Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
 
-let array = [2, 4, 6, 7, 10, 0, -3];
-let indexValue = 0;
-let arrayValue = 0
+let numbers = [2, 4, 6, 7, 10, 0, -3];
 
-for (let index = 0; index < array.length; index += 1) {
-  if (arrayValue === 0) {
-    arrayValue = array[index];
-  } else if (arrayValue >= array[index]) {
-    indexValue = index;
+function toCompareValor(indexValue, arrayValue, array) {
+  for (let index = 0; index < array.length; index += 1) {
+    if (arrayValue === 0) {
+      arrayValue = array[index];
+    } else if (arrayValue >= array[index]) {
+      indexValue = index;
+    }
   }
+  return indexValue;
 }
 
-console.log(indexValue);
+let result = toCompareValor(0, 0, numbers);
 
+console.log(result);
