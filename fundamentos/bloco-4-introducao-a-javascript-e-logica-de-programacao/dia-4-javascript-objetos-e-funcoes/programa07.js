@@ -1,12 +1,14 @@
 // Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
 
-let array = [2, 3, 6, 7, 10, 1];
-let indexValue = 0;
+let numbers = [2, 3, 6, 7, 10, 1];
 
-for (let index = 0; index < array.length; index += 1) {
-  if (indexValue <= array[index]) {
-    indexValue = index;
+function toCompareValor(indexValue, array) {
+  for (let index = 0; index < array.length; index += 1) {
+    if (indexValue <= array[index]) {
+      indexValue = index;
+    }
   }
+  return indexValue
 }
 
-console.log(indexValue);
+console.log(toCompareValor(0, numbers));
