@@ -59,6 +59,7 @@
     <script>
       let h1 = document.createElement('h1');
       h1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      h1.className = 'title';
       document.body.appendChild(h1);
 
       let divDad = document.createElement('div');
@@ -74,7 +75,10 @@
       divChild1.appendChild(p1DivChild1);
 
       for (index = 0; index < 3; index += 1) {
-          divChild1.appendChild(document.createElement('h3'));
+        divChild1.appendChild(document.createElement('h3'));
+      }
+      for (index = 0; index < 3; index += 1) {
+        document.getElementsByTagName('h3')[index].className = 'description';
       }
 
       let divChild2 = document.createElement('div');
@@ -105,6 +109,15 @@
       document.getElementsByTagName('li')[7].innerText = 'Oito';
       document.getElementsByTagName('li')[8].innerText = 'Nove';
       document.getElementsByTagName('li')[9].innerText = 'Dez';
+
+      divDad.removeChild(divChild2);
+
+      divChild3.style.marginRight = 'auto';
+
+      divChild1.parentElement.style.backgroundColor = 'green';
+
+      ulDivChild3.removeChild(document.getElementsByTagName('li')[9]);
+      document.getElementsByTagName('li')[8].parentElement.removeChild(document.getElementsByTagName('li')[8]);
       
     </script>
   </body>
