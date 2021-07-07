@@ -18,14 +18,18 @@ function createDaysInNumbers () {
     for (index = 0; index < dezDaysList.length; index += 1) {
         let liDays = SelectUlDays.appendChild(document.createElement('li'));
         liDays.className = 'day';
+        let liDaysList = document.querySelectorAll('.day');
+        liDaysList[index].innerText = dezDaysList[index];
     }
 
-    for (index = 0; index < dezDaysList.length; index += 1) {
-        document.querySelectorAll('.day')[index].innerText = dezDaysList[index];
-    }
-    
+    document.querySelectorAll('.day')[5].classList.add('friday');
+    document.querySelectorAll('.day')[12].classList.add('friday');
+    document.querySelectorAll('.day')[19].classList.add('friday');
+    document.querySelectorAll('.day')[25].classList.add('holiday');
+    document.querySelectorAll('.day')[26].classList.add('holiday', 'friday');
+    document.querySelectorAll('.day')[32].classList.add('holiday');
 }
-console.log(document.querySelectorAll('#days .day'));
+    
   createDaysOfTheWeek();
   createDaysInNumbers();
   
