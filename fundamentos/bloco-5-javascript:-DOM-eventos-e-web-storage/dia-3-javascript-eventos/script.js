@@ -134,7 +134,20 @@ function addTask(event) {
     document.querySelector('section').children[0].appendChild(createTask);
 }
 
+addTask('Projeto:')
 // 8. Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
 // 8.1 O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
 // 8.2 O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
+function addColor(color) {
+    let createColor = document.createElement('div');
+    createColor.className = 'task';
+    createColor.style.backgroundColor = color;
+    document.querySelector('section').children[0].appendChild(createColor);
+}
 
+addColor('lime');
+// 9. Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
+// 9.1 Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
+function addClassTaskSelected (evento) {
+    
+}
