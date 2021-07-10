@@ -173,3 +173,17 @@ function colorAttribution (event) {
 for (index = 0; index < days.length; index += 1) {
     days[index].addEventListener('click', colorAttribution);
 }
+
+// BÔNUS. Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
+// Se nenhum caractere for inserido no campo input , a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
+// Ao pressionar a tecla "enter" o evento também deverá ser disparado.
+let inputText = document.querySelector('#task-input');
+let inputButton = document.querySelector('#btn-add');
+let ulTasks = document.querySelector('section').children[2].firstElementChild;
+function compromisses(event) {
+    let createLi = ulTasks.appendChild(document.createElement('li'));
+    inputText.innerHTML = event.keyCode;
+    createLi.innerHTML = inputText.innerHTML;
+}
+
+inputButton.addEventListener('click', compromisses);
