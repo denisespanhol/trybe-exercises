@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+.backgroundColor {
+    background-color: whitesmoke;
+}
+
+.textColor {
+    color: grey;
+}
+
+.fontSize {
+    font-size: medium;
+}
+
+.fontSpacing {
+    font-kerning: auto;
+}
+
+.fontFamily {
+    font-family: 'Courier New', Courier, monospace;
+}
