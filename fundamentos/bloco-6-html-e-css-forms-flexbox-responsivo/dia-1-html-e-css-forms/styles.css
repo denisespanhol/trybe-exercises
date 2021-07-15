@@ -1,0 +1,14 @@
+#text-align {
+    text-align: center;
+}
+
+.inputs-style {
+    text-align: justify;
+    width: 50%;
+}
+
+.box {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 25px;
+}
