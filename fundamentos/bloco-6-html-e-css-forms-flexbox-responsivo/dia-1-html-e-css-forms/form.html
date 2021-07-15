@@ -14,54 +14,54 @@
 
     <form action="" method="GET">
         <fieldset class="box">
-            <label for="">Nome Completo:</label>
+            <label for="fullname">Nome Completo:</label>
             <br>
-            <input type="text" maxlength="40" placeholder="Insira seu nome completo" class="inputs-style">
+            <input type="text" name="fullname" maxlength="40" placeholder="Insira seu nome completo" class="inputs-style" required>
             <br><br>
-            <label for="">E-mail:</label>
+            <label for="emailAdress">E-mail:</label>
             <br>
-            <input type="email" maxlength="50" placeholder="Insira seu endereço de e-mail" class="inputs-style">
+            <input type="email" name="emailAdress" maxlength="50" placeholder="Insira seu endereço de e-mail" class="inputs-style" required>
             <br><br>
-            <label for="">CPF:</label>
+            <label for="CPFNumbers">CPF:</label>
             <br>
-            <input type="text" maxlength="11" placeholder="Insira a numeração sem pontos" class="inputs-style">
+            <input type="text" name="CPFNumbers" maxlength="11" placeholder="Insira a numeração sem pontos" class="inputs-style" required>
             <br><br>
-            <label for="">Endereço:</label>
+            <label for="AdressWithNumber">Endereço:</label>
             <br>
-            <input type="text" maxlength="200" placeholder="Ex: Rua Campo Grande, nº 121 - Bairro das Cores" class="inputs-style">
+            <input type="text" name="AdressWithNumber" maxlength="200" placeholder="Ex: Rua Campo Grande, nº 121 - Bairro das Cores" class="inputs-style" required>
             <br><br>
-            <label for="">Cidade:</label>
+            <label for="City">Cidade:</label>
             <br>
-            <input type="text" maxlength="28" placeholder="Ex: Ribeirão Preto" class="inputs-style">
+            <input type="text" name="City" maxlength="28" placeholder="Ex: Ribeirão Preto" class="inputs-style" required>
             <br><br>
-            <label for="">Estado:</label>
+            <label for="state">Estado:</label>
             <br>
             <div>
-                <select id="sigles-states"></select>
+                <select name="state" id="sigles-states" required></select>
             </div>
             <br>
-            <label for="" value="type">Tipo de residência:</label>
+            <label for="type" value="type">Tipo de residência:</label>
             <br>
-            <label><input type="radio" name="type" value="type">Casa</label>
-            <label><input type="radio" name="type" value="type">Apartamento</label>
+            <label><input type="radio" name="type" value="type" required>Casa</label>
+            <label><input type="radio" name="type" value="type" required>Apartamento</label>
         </fieldset>
         <br>
         <fieldset class="box">
-            <label for="">Resumo profissional (até 1000 caracteres):</label>
+            <label for="abstract">Resumo profissional (até 1000 caracteres):</label>
             <br>
-            <textarea cols="60" rows="10" maxlength="1000" placeholder="Conte sua carreira de forma resumida"></textarea>
+            <textarea name="abstract" cols="60" rows="10" maxlength="1000" placeholder="Conte sua carreira de forma resumida" required></textarea>
             <br><br>
-            <label for="">Cargo:</label>
+            <label for="office">Cargo:</label>
             <br>
-            <input type="text" maxlength="40" placeholder="Insira seu cargo atual, ou último" class="inputs-style">
+            <input type="text" name="office" maxlength="40" placeholder="Insira seu cargo atual, ou último" class="inputs-style" required>
             <br><br>
-            <label for="">Descrição do cargo (até 500 caracteres):</label>
+            <label for="office-describe">Descrição do cargo (até 500 caracteres):</label>
             <br>
-            <textarea cols="60" rows="7" maxlength="500" placeholder="Descreva suas principais funções em detalhes"></textarea>
+            <textarea name="office-describe" cols="60" rows="7" maxlength="500" placeholder="Descreva suas principais funções em detalhes" required></textarea>
             <br><br>
-            <label for="">Data de início:</label>
+            <label for="date">Data de início:</label>
             <br>
-            <input type="text" id="date" placeholder="Ex: dd/mm/aaaa" class="inputs-style">
+            <input type="text" name="date" id="date" placeholder="Ex: dd/mm/aaaa" class="inputs-style" required>
             <br><br>
             <button type="submit" id="send-button">Enviar</button>
         </fieldset>
