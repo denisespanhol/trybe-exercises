@@ -7,11 +7,3 @@ for (index = 0; index < states.length; index += 1) {
 
 const takeDate = document.querySelector('#date');
 const takeSendButton = document.querySelector('#send-button');
-
-function dateVerify() {
-  if (takeDate.value.length > 10) {
-    window.alert('O número de caracteres da data de início é maior que o permitido');
-  }
-}
-
-takeDate.addEventListener('input', dateVerify);
