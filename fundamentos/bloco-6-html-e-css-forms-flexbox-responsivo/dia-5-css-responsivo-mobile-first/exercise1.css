@@ -1,0 +1,35 @@
+@media screen and (max-width: 600px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    margin: 7px;
+  }
+
+  h1 {
+    font-size: larger;
+    text-align: center;
+    padding: 15px;
+    background-color: lightcyan;
+  }
+}
+  
+
+
+body {
+
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
