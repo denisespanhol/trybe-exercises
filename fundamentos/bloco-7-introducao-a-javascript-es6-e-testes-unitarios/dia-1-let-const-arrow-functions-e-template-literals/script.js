@@ -28,4 +28,18 @@ const ordenedNumbers = `Os números ${oddsAndEvens.sort((a, b) => a - b)} se enc
 
 console.log(ordenedNumbers);
 
+// 3. Crie uma função que receba um número e retorne seu fatorial.
+// Na matemática, o fatorial de um número não negativo N , com a notação N! , é o produto de todos os inteiros menores ou iguais a N . Exemplo: 4! = 4 * 3 * 2 * 1 = 24.
 
+const testNumber = n => {
+	for (let index = n - 1; index >= 1; index -= 1) {
+		n *= index;
+	}
+	return n;
+}
+
+// Bônus (opcional): tente fazer o mesmo exercício de forma recursiva . Spoiler: É possível resolver com uma linha usando ternary operator.
+
+const testNumber2 = n => (
+	n !== 1 ? n * testNumber2(n - 1) : n
+);
