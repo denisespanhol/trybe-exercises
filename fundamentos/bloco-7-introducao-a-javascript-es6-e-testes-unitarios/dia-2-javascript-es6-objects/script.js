@@ -50,7 +50,6 @@ const orderModifier = (order) => {
   clone.order.delivery.deliveryPerson = 'Luiz Silva';
   
   console.log(`Olá ${order.order.delivery.deliveryPerson}, o total do seu pedido de ${Object.keys(order.order.pizza)[0]}, ${Object.keys(order.order.pizza)[1]} e ${order.order.drinks.coke.type} é de R$${order.order.pizza.marguerita.price + order.order.pizza.pepperoni.price + order.order.drinks.coke.price},00.`)
-
 }
 
 orderModifier(order);
