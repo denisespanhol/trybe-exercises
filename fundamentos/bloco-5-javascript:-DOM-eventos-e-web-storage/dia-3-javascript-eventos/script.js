@@ -181,9 +181,19 @@ let inputText = document.querySelector('#task-input');
 let inputButton = document.querySelector('#btn-add');
 let ulTasks = document.querySelector('section').children[2].firstElementChild;
 function compromisses(event) {
-    let createLi = ulTasks.appendChild(document.createElement('li'));
-    inputText.innerHTML = event.keyCode;
-    createLi.innerHTML = inputText.innerHTML;
+    let enter = event.keyCode;
+    if (inputText.value === '') {
+        alert('ERRO: Nenhum evento para inserir.')
+    }
+    const createLi = ulTasks.appendChild(document.createElement('li'));
+    createLi.innerText = inputText.value;
+    inputText.value = '';
 }
 
 inputButton.addEventListener('click', compromisses);
+// O código abaixo, que faz o enter dentro do input ter o mesmo efeito do click no botão, foi retirado e aprendido do seguinte link: https://www.horadecodar.com.br/2020/12/10/acionar-um-button-com-o-enter-do-teclado-em-javascript/
+inputText.addEventListener('keypress', (event) => {
+    if(event.key === 'Enter') {
+        inputButton.click();
+    }
+})
