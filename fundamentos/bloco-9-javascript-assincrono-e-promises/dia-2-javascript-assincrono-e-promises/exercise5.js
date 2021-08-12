@@ -1,4 +1,4 @@
-// 4. Quando a Promise for rejeitada, imprima, via console.log , a frase "É mais de oito mil! Essa promise deve estar quebrada!"
+// 5. Quando a Promise for bem-sucedida, encadeie nela uma segunda Promise que some os elementos do array.
 
 const randomNumbers = (min, max) => {
   min = Math.ceil(min);
@@ -25,6 +25,10 @@ const promise = new Promise((resolve, reject) => {
 })
 .then(result => {
   const divisors = [result / 2, result / 3, result / 5, result / 10];
-  return console.log(divisors);
+  new Promise((resolve, reject) => {
+    const sumDivisors = divisors.reduce((acc, curr) => acc + curr, 0);
+    resolve(sumDivisors);
+  })
+  .then(sumDivisors => console.log(`Os elementos, divididos e somados, são igual a: ${sumDivisors.toFixed(2)}!`));
 })
 .catch(result => console.log('É mais de oito mil! Essa promise deve estar quebrada!'));
