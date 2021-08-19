@@ -7,7 +7,19 @@
 const sum = require('./exercise1');
 
 describe('Exercise 1', () => {
-  it('A função testa se o retorno de sum(4, 5) é 9', () => {
+  it('Testa se o retorno de sum(4, 5) é 9', () => {
     expect(9).toBe(sum(4, 5));
+  });
+
+  it('Testa se o retorno de sum(0, 0) é 0', () => {
+    expect(0).toBe(sum(0, 0));
+  });
+
+  it('Testa se a função sum lança um erro se um parâmetro for string', () => {
+    expect(() => { sum(4, "5") }).toThrow();
+  })
+
+  it('Testa se a mensagem de erro é "parameters must be numbers"', () => {
+    expect(() => { sum(4, "5") }).toThrowError(new Error('parameters must be numbers'));
   });
 });
